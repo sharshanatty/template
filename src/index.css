@@ -92,7 +92,7 @@
   display: flex;
   justify-content: space-between;
   width: 241px;
-  height: 65.594px;
+  height: 66px;
 }
 
 .logo {
@@ -100,7 +100,7 @@
   border: 0;
   flex: 1;
   width: 193px;
-  height: 47.594px;
+  height: 48px;
   padding: 0 24px;
   margin-bottom: 18px;
 }
