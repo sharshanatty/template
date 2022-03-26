@@ -55,11 +55,7 @@
   width: 32px;
 }
 
-.back-button svg {
-  fill: currentcolor;
-}
-
-.forward-button svg {
+.navigation__button {
   fill: currentcolor;
 }
 
@@ -188,7 +184,7 @@
   transition: background-color .3s ease;
 }
 
-.card img {
+.card__img {
   border-radius: 5px;
 }
 
