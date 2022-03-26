@@ -172,10 +172,6 @@
   color: white;
 }
 
-p {
-  color:rgba(255, 255, 255, .3)
-}
-
 .section__content {
   display: grid;
   gap: 24px;
