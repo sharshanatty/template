@@ -121,7 +121,7 @@
   height: 40px;
 }
 
-.link {
+.menu__item {
   display: flex;
   width: 193px;
   height: 40px;
@@ -129,7 +129,7 @@
   color: lightgray;
 }
 
-.link:hover {
+.menu__item:hover {
   color: white;
 }
 
@@ -168,7 +168,7 @@
   margin-bottom: 16px;
 }
 
-h2 {
+.section {
   color: white;
 }
 
@@ -212,6 +212,7 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: white;
 }
 
 .author {
@@ -227,7 +228,6 @@ p {
   text-overflow: ellipsis;
 }
 
-a {
+.link {
   text-decoration: none !important;
-  color: white;
 }
