@@ -152,12 +152,6 @@
   position: relative;
 }
 
-.section_div {
-  align-items: flex-end;
-  display: flex;
-  margin-bottom: 16px;
-}
-
 .section__description {
   align-items: flex-end;
   display: flex;
@@ -186,11 +180,12 @@
 
 .card__img {
   border-radius: 5px;
+  width: 161px;
 }
 
 .card__description {
-    width: 161px;
-    height: 62px;
+  width: 161px;
+  height: 62px;
 }
 
 .caption {
