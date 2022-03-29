@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #616161;
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background:black;
+}
+
 .app {
   display: grid;
   grid-template-columns: 241px 1fr;
@@ -160,6 +176,7 @@
 
 .section {
   color: white;
+  overflow-x: scroll;
 }
 
 .section__content {
@@ -194,9 +211,9 @@
   letter-spacing: normal;
   font-weight: 700;
   padding-bottom: 4px;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
   color: white;
 }
 
@@ -208,9 +225,9 @@
   letter-spacing: normal;
   font-weight: 400;
   color: #6a6a6a;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .link {
