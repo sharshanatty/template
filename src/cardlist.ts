@@ -1,18 +1,22 @@
 import { Card } from './card.js'
 
 interface IList {
-  add(img: string, name: string, author: string): void;
+  add(card: Card): void;
 }
 
 export class CardList implements IList {
-    constainer: HTMLElement;
-    constructor(container: HTMLElement) {
-        this.constainer = container;
-    }
-    add(img: string, name: string, author: string): Card {
-      const card = new Card(img, name, author);
-      const template = Card.template(card);
-      this.constainer.insertAdjacentHTML('beforeend', template);
-      return card;
+  constainer: HTMLElement;
+  constructor(container: HTMLElement) {
+      this.constainer = container;
+  }
+
+  add(card: Card): Card {
+    const template = Card.template(card);
+    this.constainer.insertAdjacentHTML('beforeend', template);
+    return card;
+  }
+
+  clearHtml(): void {
+    this.constainer.innerHTML = '';
   }
 }
