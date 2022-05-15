@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Spotify</title>
+      <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="app">
+    <header class="header">
+      <div class="header__navigation">
+        <button class="back-button">
+          <svg class="navigation__button" role="img" height="24" width="24" viewBox="0 0 24 24">
+            <path d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z"></path>
+          </svg>
+        </button>
+        <button class="forward-button">
+          <svg class="navigation__button" role="img" height="24" width="24" viewBox="0 0 24 24">
+            <path d="M8.043 2.793a1 1 0 000 1.414L15.836 12l-7.793 7.793a1 1 0 101.414 1.414L18.664 12 9.457 2.793a1 1 0 00-1.414 0z"></path>
+          </svg>
+        </button>
+      </div>
+      <button class="tariff">Сменить тариф</button>
+    </header>
+    <aside class="accordion">
+      <nav class="accordion__navigation">
+        <div class="banner">
+          <a class="logo link" href="#">
+            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Лого" width="131" />
+          </a>
+        </div>
+        <ul class="tags">
+          <li class="tag"><a class="menu__item link" href="#"><span>Главная</span></a></li>
+          <li class="tag"><a class="menu__item link" href="#"><span>Поиск</span></a></li>
+          <li class="tag"><a class="menu__item link" href="#"><span>Моя медиатека</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="content">
+      <div class="content__div">
+        <section class="section">
+          <div class="section__description">
+            <h2>Рекомендуемые станции</h2>
+          </div>
+          <div class="section__content">
+            <div class="card">
+              <img class="card__img" src="https://seeded-session-images.scdn.co/v1/img/artist/6qqNVTkY8uBg9cP3Jd7DAH/ru"/>
+              <div class="card__description">
+                <a class="link" href="#"><div class="caption">Billie Eilish: радио</div></a>
+                <div class="author">
+                  <span>Автор: Spotify</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="https://seeded-session-images.scdn.co/v1/img/artist/23fW0TaMYDKQiyuoIpq8Ds/ru"/>
+              <div class="card__description">
+                <a class="link" href="#"><div class="caption" >Асия: радио</div></a>
+                <div class="author">
+                  <span>Автор: Spotify</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="https://seeded-session-images.scdn.co/v1/img/artist/7Ln80lUS6He07XvHI8qqHH/ru"/>
+              <div class="card__description">
+                <a class="link" href="#"><div class="caption">Arctic Monkeys: радио</div></a>
+                <div class="author">
+                  <span>Автор: Spotify</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="https://seeded-session-images.scdn.co/v1/img/artist/0yp6xP5xe1qarfugfTixOK/ru"/>
+              <div class="card__description">
+                <a class="link" href="#"><div class="caption">Монеточка: радио</div></a>
+                <div class="author">
+                  <span>Автор: Spotify</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section__description">
+            <h2>Сегодняшние хиты</h2>
+          </div>
+          <div class="section__content">
+            <div class="card">
+              <img class="card__img" src="https://i.scdn.co/image/ab67706f00000002337f7c14eef4a431b5c6269e"/>
+              <div class="card__description">
+                <a class="link" href="#"><div class="caption">K-Pop X-Overs</div></a>
+                <div class="author">
+                  <span>Watch out for all the collaborations and cross-overs in the K-Pop world! Cover: salem ilese, TOMORROW X TOGETHER, Alan Walker</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="https://i.scdn.co/image/ab67706f00000002bd5e3afef1dab26f4c78feec"/>
+              <div class="card__description">
+                <a class="link" href="#"><div class="caption" >Today's Top Hits</div></a>
+                <div class="author">
+                  <span>Camila Cabello is on top of the Hottest 50!</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="https://i.scdn.co/image/ab67706f000000026bdff7dc0e53fe6ca17749b5"/>
+              <div class="card__description">
+                <a class="link" href="#"><div class="caption">Viral Hits</div></a>
+                <div class="author">
+                  <span>Viral, trending and taking off.</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="https://i.scdn.co/image/ab67706f00000002de4a4736cc548facf312d92b"/>
+              <div class="card__description">
+                <a class="link" href="#"><div class="caption">Pop Rising</div></a>
+                <div class="author">
+                  <span>The hits of tomorrow are on Spotify today. Cover: Normani</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
