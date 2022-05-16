@@ -36,6 +36,20 @@ class Api {
       ));
   }
 
+  static async getTopTags(): Promise<string[]> {
+    const params = {
+      method: "chart.getTopTags",
+      limit: 8,
+    };
+
+    const data = this.getResource(params);
+
+    return data
+      .then(json => json.tags.tag.map(item =>
+          item.name
+      ));
+  }
+
   static _convertToQueryString(params) {
     return Object.keys(params)
       .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`)

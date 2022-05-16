@@ -84,6 +84,22 @@ var Api = /** @class */ (function () {
             });
         });
     };
+    Api.getTopTags = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var params, data;
+            return __generator(this, function (_a) {
+                params = {
+                    method: "chart.getTopTags",
+                    limit: 8,
+                };
+                data = this.getResource(params);
+                return [2 /*return*/, data
+                        .then(function (json) { return json.tags.tag.map(function (item) {
+                        return item.name;
+                    }); })];
+            });
+        });
+    };
     Api._convertToQueryString = function (params) {
         return Object.keys(params)
             .map(function (key) { return "".concat(encodeURIComponent(key), "=").concat(encodeURIComponent(params[key])); })
