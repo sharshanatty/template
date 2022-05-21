@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Spotify</title>
+      <link rel="stylesheet" href="./index.css" />
+      <script src="./scripts/script.js" defer type="module"></script>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+  <body class="app">
+    <header class="header">
+      <div class="header__navigation">
+        <button class="back-button">
+          <svg class="navigation__button" role="img" height="24" width="24" viewBox="0 0 24 24">
+            <path d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z"></path>
+          </svg>
+        </button>
+        <button class="forward-button">
+          <svg class="navigation__button" role="img" height="24" width="24" viewBox="0 0 24 24">
+            <path d="M8.043 2.793a1 1 0 000 1.414L15.836 12l-7.793 7.793a1 1 0 101.414 1.414L18.664 12 9.457 2.793a1 1 0 00-1.414 0z"></path>
+          </svg>
+        </button>
+      </div>
+      <button class="tariff">Сменить тариф</button>
+    </header>
+    <aside class="accordion">
+      <nav class="accordion__navigation">
+        <div class="banner">
+          <a class="logo link" href="#">
+            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Лого" width="131" />
+          </a>
+        </div>
+        <ul class="tags">
+          <li class="tag"><a class="menu__item link" href="#"><span>Главная</span></a></li>
+          <li class="tag"><a class="menu__item link" href="#"><span>Поиск</span></a></li>
+          <li class="tag"><a class="menu__item link" href="#"><span>Моя медиатека</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="content">
+      <div class="content__div">
+      </div>
+    </main>
   </body>
 </html>
