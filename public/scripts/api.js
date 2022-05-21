@@ -46,9 +46,17 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 import { Card } from './card.js';
+/**
+ * Статический класс для взаимодействия с API
+ */
 var Api = /** @class */ (function () {
     function Api() {
     }
+    /**
+     * Формирование запроса и получение json данных
+     * @param params - параметры API запроса
+     * @returns - то, что возвращает API запос с заданными параметрами в формате json
+     */
     Api.getResource = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var qs, res;
@@ -67,6 +75,11 @@ var Api = /** @class */ (function () {
             });
         });
     };
+    /**
+     * Получение списка популярных альбомов по тегу
+     * @param tag
+     * @returns - массив с карточками
+     */
     Api.getTopAlbums = function (tag) {
         return __awaiter(this, void 0, void 0, function () {
             var params, data;
@@ -84,6 +97,10 @@ var Api = /** @class */ (function () {
             });
         });
     };
+    /**
+     * Получение популярных тегов
+     * @returns - массив тегов
+     */
     Api.getTopTags = function () {
         return __awaiter(this, void 0, void 0, function () {
             var params, data;
@@ -105,9 +122,9 @@ var Api = /** @class */ (function () {
             .map(function (key) { return "".concat(encodeURIComponent(key), "=").concat(encodeURIComponent(params[key])); })
             .join('&');
     };
-    Api._apiBase = 'http://ws.audioscrobbler.com/2.0/';
-    Api._apiKey = '521d13323816fb7d91a987fcacd41775';
-    Api._apiFormar = 'json';
+    Api._apiBase = 'http://ws.audioscrobbler.com/2.0/'; // Базовый API адрес для API запросов
+    Api._apiKey = '521d13323816fb7d91a987fcacd41775'; // Ваш API ключ
+    Api._apiFormar = 'json'; // Формат, в котором будут приходить данные
     return Api;
 }());
 export default Api;

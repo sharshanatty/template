@@ -1,6 +1,15 @@
 import { Card } from './card.js';
 
+/**
+ * Статический класс для взаимодействия с API
+ */
+
 class Api {
+  /**
+   * Формирование запроса и получение json данных
+   * @param params - параметры API запроса
+   * @returns - то, что возвращает API запос с заданными параметрами в формате json
+   */
   static async getResource(params) {
     const qs = this._convertToQueryString({
       ...params,
@@ -17,6 +26,11 @@ class Api {
     return res.json();
   }
 
+  /**
+   * Получение списка популярных альбомов по тегу
+   * @param tag
+   * @returns - массив с карточками
+   */
   static async getTopAlbums(tag: string): Promise<Card[]> {
     const params = {
       method: "tag.gettopalbums",
@@ -36,6 +50,10 @@ class Api {
       ));
   }
 
+  /**
+   * Получение популярных тегов
+   * @returns - массив тегов
+   */
   static async getTopTags(): Promise<string[]> {
     const params = {
       method: "chart.getTopTags",
@@ -56,9 +74,9 @@ class Api {
       .join('&')
   }
 
-  static _apiBase = 'http://ws.audioscrobbler.com/2.0/';
-  static _apiKey = '521d13323816fb7d91a987fcacd41775';
-  static _apiFormar = 'json';
+  static _apiBase = 'http://ws.audioscrobbler.com/2.0/'; // Базовый API адрес для API запросов
+  static _apiKey = '521d13323816fb7d91a987fcacd41775'; // Ваш API ключ
+  static _apiFormar = 'json'; // Формат, в котором будут приходить данные
 }
 
 
