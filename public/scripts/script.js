@@ -1,4 +1,5 @@
 var $content = document.querySelector('.content__div');
+// Главный скрипт страницы
 import { Content } from './content.js';
 import Api from './api.js';
 Api.getTopTags()

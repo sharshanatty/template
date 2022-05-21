@@ -1,5 +1,7 @@
 const $content = document.querySelector('.content__div') as HTMLElement;
 
+// Главный скрипт страницы
+
 import { Content } from './content.js';
 import { Card } from './card.js';
 import Api from './api.js';
