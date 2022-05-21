@@ -107,7 +107,7 @@ var Api = /** @class */ (function () {
             return __generator(this, function (_a) {
                 params = {
                     method: "chart.getTopTags",
-                    limit: 8,
+                    limit: 6,
                 };
                 data = this.getResource(params);
                 return [2 /*return*/, data

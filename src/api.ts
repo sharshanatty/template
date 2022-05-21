@@ -57,7 +57,7 @@ class Api {
   static async getTopTags(): Promise<string[]> {
     const params = {
       method: "chart.getTopTags",
-      limit: 8,
+      limit: 6,
     };
 
     const data = this.getResource(params);
