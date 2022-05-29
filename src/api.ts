@@ -1,10 +1,10 @@
-import { Card } from './card.js';
+import { Card } from './card';
 
 /**
  * Статический класс для взаимодействия с API
  */
 
-class Api {
+export class Api {
   /**
    * Формирование запроса и получение json данных
    * @param params - параметры API запроса
@@ -78,6 +78,3 @@ class Api {
   static _apiKey = '521d13323816fb7d91a987fcacd41775'; // Ваш API ключ
   static _apiFormar = 'json'; // Формат, в котором будут приходить данные
 }
-
-
-export default Api;

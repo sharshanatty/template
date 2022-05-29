@@ -4,7 +4,7 @@ const $content = document.querySelector('.content__div') as HTMLElement;
 
 import { Content } from './content.js';
 import { Card } from './card.js';
-import Api from './api.js';
+import {Api} from './api.js';
 
 Api.getTopTags()
   .then((tags: string[]) => {
