@@ -19,24 +19,4 @@ export class Content {
       this.tag = tag;
       this.cardlist = cardlist;
   }
-
-  /**
-   * Создает html код верстки для одной секции
-   * @param content - Контент
-   * @returns html код верстки одной секции
-   */
-  static template(content): string {
-    return `
-      <section class="section" data-id=${content.id}>
-        <div class="section__description">
-          <h2>Лучшие альбомы ${content.tag}-музыки</h2>
-        </div>
-        <div class="section__content">
-          ${content.cardlist.reduce((prev, curr) => {
-            return prev+=Card.template(curr);
-          }, '')}
-        </div>
-      </section>
-    `;
-  }
 }

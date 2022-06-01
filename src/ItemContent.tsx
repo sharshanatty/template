@@ -16,7 +16,7 @@ export function ItemContent(props: {tag:string, cardList: Card[]}) {
       <h2>Лучшие альбомы {props.tag}-музыки</h2>
     </div>
     <div className="section__content">
-    {cards.map(card => <ItemCard card={card}></ItemCard>)}
+    {cards.map(card => <ItemCard key={card.img} card={card}></ItemCard>)}
     </div>
   </section>
 }

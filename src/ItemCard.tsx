@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import { Card } from './card';
 
 export function ItemCard(props: {card: Card}) {
